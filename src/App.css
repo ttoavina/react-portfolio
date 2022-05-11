@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --primary-color:#8D8DAA; */
+  --primary-color:#ffffff;
+  --secondary-color:#454545;
+  --third-color:#F7F5F2;
+  --fourth-color:#F56D91;
+
+}
+
+@layer components {
+  .header {
+    @apply flex flex-col justify-center h-screen;
+
+  }
+  .text-button {
+    @apply px-8 py-2 text-sm font-medium hover:font-bold hover:underline;
+  }
+
+  .elevated-button {
+    @apply bg-gray-900  text-sm text-gray-200 rounded px-8 py-2 font-medium;
+    height: 80vh;
+  }
+
+  
+
+  .primary {
+    background: var(--primary-color);
+  }
+  
+  .secondary {
+    background: var(--secondary-color);
+  }
+  
+  .third {
+    background: var(--third-color);
+  }
+
+  .fourth {
+    background: var(--fourth-color);
+  }
+
+}
